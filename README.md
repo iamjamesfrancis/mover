@@ -36,11 +36,15 @@ This Python program automates moving the mouse cursor to a specific location on 
 5. Optionally, create a CMD file to easily execute the program:
    - If using the system's Python installation:
      ```cmd
+     @echo off
      python path\to\mouse_mover.py
+     pause
      ```
    - If using a virtual environment:
      ```cmd
+     @echo off
      path\to\venv\Scripts\python path\to\mouse_mover.py
+     pause
      ```
    Save this as `run_mouse_mover.cmd` and double-click it to run the program.
 
