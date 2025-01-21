@@ -2,6 +2,7 @@ import time
 from datetime import datetime
 import pyautogui
 
+DURATION = 60  # Duration in seconds
 while True:
 
     # Get the current mouse position
@@ -14,6 +15,4 @@ while True:
     current_time = datetime.now()
     formatted_time = current_time.strftime("%H:%M:%S")  # Format: Hour:Minute:Second
     print("Mouse moved!: ", formatted_time)
-    # Wait for 2 minutes (120 seconds)
-    # time.sleep(120)
-    time.sleep(60)
+    time.sleep(DURATION)  # Wait for the specified duration before moving the mouse again
